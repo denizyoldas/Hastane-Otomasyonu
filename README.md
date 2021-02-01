@@ -12,7 +12,7 @@ Asp net Web Form ile yapılan basit bir hastane otomasyon sistemi,
 - Basit session kontrolü ile giriş algılama
 - Basit cookie kullanımı ile kullanıcı hatırlama
 - Basit düzey Entity Framework ile CRUD operasyonları 
-- Orta düzeyde bootstrap ve font awesomme kullanımı
+- Orta düzeyde bootstrap ve font awesome kullanımı
 
 ## Örnek görseller
 
