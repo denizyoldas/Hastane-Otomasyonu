@@ -14,6 +14,8 @@ Asp net Web Form ile yapılan basit bir hastane otomasyon sistemi,
 - Basit düzey Entity Framework ile CRUD operasyonları 
 - Orta düzeyde bootstrap ve font awesomme kullanımı
 
-###
+## Örnek görseller
 
-İnternet programcılığı ödevi olarak hazırlanmıştır.
+![alt text](https://documentation.solarwinds.com/en/Success_Center/loggly/Content/Resources/Images/docs/Screen-Shot-2017-09-28-at-4.13.35-PM.png)
+
+### İnternet programcılığı ödevi olarak hazırlanmıştır.
