@@ -16,7 +16,9 @@ Asp net Web Form ile yapılan basit bir hastane otomasyon sistemi,
 
 ## Örnek görseller
 
-![alt text](https://documentation.solarwinds.com/en/Success_Center/loggly/Content/Resources/Images/docs/Screen-Shot-2017-09-28-at-4.13.35-PM.png)
+![alt text](https://github.com/denizyoldas/Hastane-Otomasyonu/blob/master/images/loginPage.png)
+![alt text](https://github.com/denizyoldas/Hastane-Otomasyonu/blob/master/images/dashboard.png)
+![alt text](https://github.com/denizyoldas/Hastane-Otomasyonu/blob/master/images/list.png)
 
 ### Yapılması Gerekenler
 
