@@ -18,4 +18,11 @@ Asp net Web Form ile yapılan basit bir hastane otomasyon sistemi,
 
 ![alt text](https://documentation.solarwinds.com/en/Success_Center/loggly/Content/Resources/Images/docs/Screen-Shot-2017-09-28-at-4.13.35-PM.png)
 
+### Yapılması Gerekenler
+
+- [x] Model
+- [ ] Interface
+- [ ] Kalıtım mimarisi
+- [ ] design patterns
+
 ### İnternet programcılığı ödevi olarak hazırlanmıştır.
