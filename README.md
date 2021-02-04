@@ -21,7 +21,7 @@ Sisteme admin olarak giriş yapabilen bir kullanıcı sistemdeki kullanıcılar�
 
 ![alt text](https://github.com/denizyoldas/Hastane-Otomasyonu/blob/master/images/loginPage.png)
 ![alt text](https://github.com/denizyoldas/Hastane-Otomasyonu/blob/master/images/dashboard.png)
-![alt text](https://github.com/denizyoldas/Hastane-Otomasyonu/blob/master/images/list.png)
+![alt text](https://github.com/denizyoldas/Hastane-Otomasyonu/blob/master/images/userList.png)
 
 ### Yapılması Gerekenler
 
