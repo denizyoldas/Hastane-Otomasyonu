@@ -52,8 +52,8 @@
                                         <%# Eval("status").ToString() == "1" ? "Yeşil" : (Eval("status").ToString() == "2" ? "Sarıl" : (Eval("status").ToString() == "3" ? "kırmızı" : "")) %>
                                     </td>
                                     <td>
-                                        <input style="font-size: small" class="btn btn-warning" type="button" value="Güncelle" onclick="confirmUpdate(<%#Eval("id")%>)">
-                                        <input style="font-size: small" class="btn btn-danger btn-circle" type="button" value="Sil" onclick="confirmDelete(<%#Eval("id")%>)">
+                                        <i class="fa fa-edit fa-sm pr-2" style="color: forestgreen; cursor: pointer" onclick="confirmUpdate(<%#Eval("id")%>)"></i>
+                                        <i class="fa fa-trash fa-sm" style="color: red; cursor: pointer" onclick="confirmDelete(<%#Eval("id")%>)"></i>
                                     </td>
                                 </tr>
                             </ItemTemplate>

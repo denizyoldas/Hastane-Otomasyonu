@@ -38,6 +38,10 @@
                                     <td><%# Eval("id") %></td>
                                     <td><%# Eval("nameSurname") %></td>
                                     <td><%# Eval("email") %></td>
+<%--                                    <td>
+                                        <i class="fa fa-edit fa-sm pr-2" style="color: forestgreen; cursor: pointer" onclick="confirmUpdate(<%#Eval("id")%>)"></i>
+                                        <i class="fa fa-trash fa-sm" style="color: red; cursor: pointer" onclick="confirmDelete(<%#Eval("id")%>)"></i>
+                                    </td>--%>
                                 </tr>
                             </ItemTemplate>
                         </asp:Repeater>
