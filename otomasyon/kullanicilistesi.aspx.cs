@@ -13,9 +13,7 @@ namespace otomasyon
         protected void Page_Load(object sender, EventArgs e)
         {
             if(Session["userRole"].ToString() != "admin")
-            {
                 Response.Redirect("Default.aspx");
-            }
             var user = db.Users.ToList();
             Repeater1.DataSource = user;
             Repeater1.DataBind();
