@@ -23,6 +23,24 @@ namespace otomasyon
             var allCount = db.Patients.Count();
             all.Text = allCount.ToString();
 
+            //var patrients = db.Patients.ToList().Take(10);
+                var patrients = (from p in db.Patients
+                             join f in db.Fields
+                             on p.field equals f.id
+                             join s in db.Statuses
+                             on p.status equals s.id
+                             orderby p.createdDate descending
+                             select new
+                             {
+                                 id = p.id,
+                                 name = p.name,
+                                 surname = p.surname,
+                                 tcNo = p.tcNo,
+                                 fieldName = f.name,
+                                 statusName = s.name
+                             }).ToList().Take(10);
+            Repeater1.DataSource = patrients;
+            Repeater1.DataBind();
             //green.Text = Session["user"].ToString();
         }
     }

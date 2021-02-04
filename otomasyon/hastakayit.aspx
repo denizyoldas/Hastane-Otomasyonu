@@ -34,17 +34,11 @@
                     <div class="form-group">
                         <label for="field">Hasta kayıt Tipi</label>
                         <asp:DropDownList ID="fieldDrop" runat="server" class="form-control">
-                            <asp:ListItem Value="1">Ayakta</asp:ListItem>
-                            <asp:ListItem Value="2">Yatış</asp:ListItem>
-                            <asp:ListItem Value="3">Taburcu</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                     <div class="form-group">
                         <label for="field">Hasta Alanı</label>
                         <asp:DropDownList ID="statusDrop" runat="server" class="form-control">
-                            <asp:ListItem Value="1">Yeşil</asp:ListItem>
-                            <asp:ListItem Value="2">Sarı</asp:ListItem>
-                            <asp:ListItem Value="3">Kırmızı</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>

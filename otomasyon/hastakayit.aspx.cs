@@ -13,7 +13,18 @@ namespace otomasyon
         DataContext db = new DataContext();
         protected void Page_Load(object sender, EventArgs e)
         {
+            var feild = db.Fields.ToList();
+            var status = db.Statuses.ToList();
 
+            fieldDrop.DataSource = feild;
+            fieldDrop.DataTextField = "name";
+            fieldDrop.DataValueField = "id";
+            fieldDrop.DataBind();
+
+            statusDrop.DataSource = status;
+            statusDrop.DataTextField = "name";
+            fieldDrop.DataValueField = "id";
+            statusDrop.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)

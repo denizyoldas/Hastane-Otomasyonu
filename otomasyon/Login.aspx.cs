@@ -31,6 +31,7 @@ namespace otomasyon
                 if (user != null)
                 {
                     Session.Add("user", user.id);
+                    Session.Add("userRole", user.role);
                     if (remember.Checked)
                     {
                         Response.Cookies["name"].Value = user.email;

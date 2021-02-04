@@ -18,6 +18,7 @@ namespace otomasyon
             }
             var user = _db.Users.Find(Session["user"]);
             Label1.Text = user.nameSurname;
+            visible.Visible = Session["userRole"].ToString() == "admin";
         }
 
         protected void Button1_Click(object sender, EventArgs e)

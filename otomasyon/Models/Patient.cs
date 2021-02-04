@@ -13,5 +13,6 @@ namespace otomasyon.Models
         public int tcNo { get; set; }
         public int field { get; set; }
         public int status { get; set; }
+        public DateTime createdDate { get; set; }
     }
 }

@@ -3,17 +3,17 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Hasta</h1>
+        <h1 class="h3 mb-0 text-gray-800">Kullanıcılar</h1>
         <a href="hastakayit.aspx" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-            class="fas fa-download fa-sm text-white-50"></i>Yeni hasta</a>
+            class="fas fa-download fa-sm text-white-50"></i>Yeni Kullanıcı</a>
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Hasta Listesi</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Kullanıcı Listesi</h6>
         </div>
-        
+
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -22,6 +22,7 @@
                             <th>#</th>
                             <th>Ad Soyad</th>
                             <th>Email</th>
+                            <th>İşlem</th>
                         </tr>
                     </thead>
                     <tfoot>
@@ -29,6 +30,7 @@
                             <th>#</th>
                             <th>Ad Soyad</th>
                             <th>Email</th>
+                            <th>İşlem</th>
                         </tr>
                     </tfoot>
                     <tbody>
@@ -38,10 +40,10 @@
                                     <td><%# Eval("id") %></td>
                                     <td><%# Eval("nameSurname") %></td>
                                     <td><%# Eval("email") %></td>
-<%--                                    <td>
+                                    <td>
                                         <i class="fa fa-edit fa-sm pr-2" style="color: forestgreen; cursor: pointer" onclick="confirmUpdate(<%#Eval("id")%>)"></i>
                                         <i class="fa fa-trash fa-sm" style="color: red; cursor: pointer" onclick="confirmDelete(<%#Eval("id")%>)"></i>
-                                    </td>--%>
+                                    </td>
                                 </tr>
                             </ItemTemplate>
                         </asp:Repeater>

@@ -47,10 +47,8 @@
                                     <td><%# Eval("name") %></td>
                                     <td><%# Eval("surname") %></td>
                                     <td><%# Eval("tcNo") %></td>
-                                    <td><%# Eval("field").ToString() == "1" ? "Ayakta" : (Eval("status").ToString() == "2" ? "Yatış" : (Eval("status").ToString() == "2" ? "Taburcu" : "")) %></td>
-                                    <td data-toggle="modal" data-target="#exampleModalCenter">
-                                        <%# Eval("status").ToString() == "1" ? "Yeşil" : (Eval("status").ToString() == "2" ? "Sarıl" : (Eval("status").ToString() == "3" ? "kırmızı" : "")) %>
-                                    </td>
+                                    <td><%# Eval("fieldName") %></td>
+                                    <td><%# Eval("statusName") %></td>
                                     <td>
                                         <i class="fa fa-edit fa-sm pr-2" style="color: forestgreen; cursor: pointer" onclick="confirmUpdate(<%#Eval("id")%>)"></i>
                                         <i class="fa fa-trash fa-sm" style="color: red; cursor: pointer" onclick="confirmDelete(<%#Eval("id")%>)"></i>

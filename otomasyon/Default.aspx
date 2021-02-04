@@ -108,5 +108,38 @@
         </div>
     </div>
 
+    <div class="row card-body">
+        <div class="col-12">
+             <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Ad</th>
+                            <th>Soyad</th>
+                            <th>TcNo</th>
+                            <th>Alan</th>
+                            <th>Durum</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <asp:Repeater ID="Repeater1" runat="server">
+                            <ItemTemplate>
+                                <tr>
+                                    <td><%# Eval("id") %></td>
+                                    <td><%# Eval("name") %></td>
+                                    <td><%# Eval("surname") %></td>
+                                    <td><%# Eval("tcNo") %></td>
+                                    <td><%# Eval("fieldName") %></td>
+                                    <td><%# Eval("statusName") %></td>
+                                </tr>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
 
 </asp:Content>
