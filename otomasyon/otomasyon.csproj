@@ -116,6 +116,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alanlistesi.aspx" />
     <Content Include="cikis.aspx" />
     <Content Include="Content\all.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -126,6 +127,7 @@
     <Content Include="Content\sb-admin-2.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="durumlistesi.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -196,6 +198,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alanlistesi.aspx.cs">
+      <DependentUpon>alanlistesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alanlistesi.aspx.designer.cs">
+      <DependentUpon>alanlistesi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="cikis.aspx.cs">
@@ -212,6 +221,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="durumlistesi.aspx.cs">
+      <DependentUpon>durumlistesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="durumlistesi.aspx.designer.cs">
+      <DependentUpon>durumlistesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
