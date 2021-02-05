@@ -22,6 +22,7 @@
                             <th>#</th>
                             <th>Ad Soyad</th>
                             <th>Email</th>
+                            <th>Rol</th>
                             <th>İşlem</th>
                         </tr>
                     </thead>
@@ -30,6 +31,7 @@
                             <th>#</th>
                             <th>Ad Soyad</th>
                             <th>Email</th>
+                            <th>Rol</th>
                             <th>İşlem</th>
                         </tr>
                     </tfoot>
@@ -40,9 +42,10 @@
                                     <td><%# Eval("id") %></td>
                                     <td><%# Eval("nameSurname") %></td>
                                     <td><%# Eval("email") %></td>
+                                    <td><%# Eval("role") %></td>
                                     <td>
                                         <i class="fa fa-edit fa-sm pr-2" style="color: forestgreen; cursor: pointer" onclick="confirmUpdate(<%#Eval("id")%>)"></i>
-                                        <i class="fa fa-trash fa-sm" style="color: red; cursor: pointer" onclick="confirmDelete(<%#Eval("id")%>)"></i>
+                                        <i class="fa fa-trash fa-sm" style="color: red; cursor: pointer" onclick="confirmDelete(<%#Eval("id")%>, 'user')"></i>
                                     </td>
                                 </tr>
                             </ItemTemplate>

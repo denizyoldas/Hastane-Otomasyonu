@@ -140,6 +140,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="kullanicilistesi.aspx" />
+    <Content Include="kullanicisil.aspx" />
     <Content Include="Profile.aspx" />
     <Content Include="register.aspx" />
     <Content Include="yatak.aspx" />
@@ -259,6 +260,13 @@
     </Compile>
     <Compile Include="hastasil.aspx.designer.cs">
       <DependentUpon>hastasil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicisil.aspx.cs">
+      <DependentUpon>kullanicisil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kullanicisil.aspx.designer.cs">
+      <DependentUpon>kullanicisil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

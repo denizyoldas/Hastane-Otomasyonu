@@ -205,7 +205,7 @@
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
             <script>
-                function confirmDelete(silinecekID) {
+                function confirmDelete(silinecekID, local = "hasta") {
                     Swal.fire({
                         title: 'Emin misin ?',
                         text: "Bu işlemi yaparsan kayıt yok olacaktır!",
@@ -221,7 +221,12 @@
                                 'Kayıt Silindi',
                                 'success'
                             )
-                            window.location.href = "hastasil.aspx?id=" + silinecekID;
+                            if (local == "hasta") {
+                                window.location.href = "hastasil.aspx?id=" + silinecekID;
+                            } else if(local == "user") {
+                                window.location.href = "kullanicisil.aspx?id=" + silinecekID;
+                            }
+                            
                         }
                     })
                 }
