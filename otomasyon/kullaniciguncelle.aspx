@@ -10,33 +10,20 @@
         </div>
         <div class="card-body">
             <form id="form1" runat="server" class="row">
-                <div class="col-6">
+                <div class="col-12">
                     <div class="form-group">
-                        <label for="name">Adı</label>
-                        <asp:TextBox ID="nameText" runat="server" placeholder="Mahmut" class="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="alert-danger"
-                            ErrorMessage="Boş Geçilemez" ControlToValidate="nameText"></asp:RequiredFieldValidator>
+                        <label for="name">Ad Soyad</label>
+                        <asp:TextBox ID="nameSurnameText" runat="server" placeholder="Mahmut tuncar" class="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <label for="surname">Soyadı</label>
-                        <asp:TextBox ID="surnameText" runat="server" placeholder="Tuncar" class="form-control"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" CssClass="alert-danger"
-                            ErrorMessage="Boş Geçilemez" ControlToValidate="surnameText"></asp:RequiredFieldValidator>
+                        <label for="surname">Email</label>
+                        <asp:TextBox ID="emailText" runat="server" placeholder="Tuncar" class="form-control"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <label for="tcNo">TC No</label>
-                        <asp:TextBox ID="tcNoText" runat="server" placeholder="2315435" class="form-control"></asp:TextBox>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="field">Hasta kayıt Tipi</label>
-                        <asp:DropDownList ID="fieldDrop" runat="server" class="form-control">
-                        </asp:DropDownList>
-                    </div>
-                    <div class="form-group">
-                        <label for="field">Hasta Alanı</label>
-                        <asp:DropDownList ID="statusDrop" runat="server" class="form-control">
+                        <label for="surname">Rol</label>
+                        <asp:DropDownList ID="roleDrpDwn" runat="server" class="form-control">
+                            <asp:ListItem Value="moderator">Moderatör</asp:ListItem>
+                            <asp:ListItem Value="admin">Admin</asp:ListItem>
                         </asp:DropDownList>
                     </div>
                 </div>

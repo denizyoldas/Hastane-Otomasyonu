@@ -25,6 +25,7 @@ namespace otomasyon
                     usr.nameSurname = username.Text;
                     usr.email = email.Text;
                     usr.password = password.Text;
+                    usr.role = "moderator";
 
                     db.Users.Add(usr);
                     db.SaveChanges();
