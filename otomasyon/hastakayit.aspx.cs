@@ -23,7 +23,7 @@ namespace otomasyon
 
             statusDrop.DataSource = status;
             statusDrop.DataTextField = "name";
-            fieldDrop.DataValueField = "id";
+            statusDrop.DataValueField = "id";
             statusDrop.DataBind();
         }
 
@@ -34,9 +34,10 @@ namespace otomasyon
                 Patient patient = new Patient();
                 patient.name = nameText.Text;
                 patient.surname = surnameText.Text;
-                patient.tcNo = int.Parse(tcNoText.Text);
-                patient.status = int.Parse(fieldDrop.SelectedValue);
-                patient.field = int.Parse(statusDrop.SelectedValue);
+                patient.tcNo = tcNoText.Text;
+                patient.status = int.Parse(fieldDrop.SelectedItem.Value);
+                patient.field = int.Parse(statusDrop.SelectedItem.Value);
+                patient.createdDate = DateTime.Now;
 
                 db.Patients.Add(patient);
                 db.SaveChanges();

@@ -11,7 +11,7 @@ namespace otomasyon
 {
 
 
-    public partial class hastaguncelle
+    public partial class kullaniciguncelle
     {
 
         /// <summary>

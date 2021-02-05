@@ -19,11 +19,25 @@ namespace otomasyon
 
                 if (!IsPostBack)
                 {
+                    var feild = db.Fields.ToList();
+                    var status = db.Statuses.ToList();
+
+                    fieldDrop.DataSource = feild;
+                    fieldDrop.DataTextField = "name";
+                    fieldDrop.DataValueField = "id";
+                    fieldDrop.DataBind();
+
+                    statusDrop.DataSource = status;
+                    statusDrop.DataTextField = "name";
+                    statusDrop.DataValueField = "id";
+                    statusDrop.DataBind();
+
                     nameText.Text = patient.name;
                     surnameText.Text = patient.surname;
                     tcNoText.Text = patient.tcNo.ToString();
-                    fieldBox.SelectedValue = patient.field.ToString();
-                    statusBox.SelectedValue = patient.status.ToString();
+
+                    fieldDrop.Items.FindByValue(patient.field.ToString()).Selected = true;
+                    statusDrop.Items.FindByValue(patient.status.ToString()).Selected = true;
                 }
             }
             else
@@ -39,9 +53,10 @@ namespace otomasyon
 
             patient.name = nameText.Text;
             patient.surname = surnameText.Text;
-            patient.tcNo = int.Parse(tcNoText.Text);
-            patient.status = int.Parse(fieldBox.SelectedValue);
-            patient.field = int.Parse(statusBox.SelectedValue);
+            patient.tcNo = tcNoText.Text;
+            patient.status = int.Parse(fieldDrop.SelectedItem.Value);
+            patient.field = int.Parse(statusDrop.SelectedItem.Value);
+            patient.createdDate = DateTime.Now;
 
             db.SaveChanges();
 

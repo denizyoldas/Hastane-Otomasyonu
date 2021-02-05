@@ -44,7 +44,9 @@
                                     <td><%# Eval("email") %></td>
                                     <td><%# Eval("role") %></td>
                                     <td>
-                                        <i class="fa fa-edit fa-sm pr-2" style="color: forestgreen; cursor: pointer" onclick="confirmUpdate(<%#Eval("id")%>)"></i>
+                                        <a href="kullaniciguncelle.aspx?id=<%# Eval("id") %>">
+                                            <i class="fa fa-edit fa-sm pr-2" style="color: forestgreen;"></i>
+                                        </a>
                                         <i class="fa fa-trash fa-sm" style="color: red; cursor: pointer" onclick="confirmDelete(<%#Eval("id")%>, 'user')"></i>
                                     </td>
                                 </tr>

@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="hastaguncelle.aspx.cs" Inherits="otomasyon.hastaguncelle" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="kullaniciguncelle.aspx.cs" Inherits="otomasyon.kullaniciguncelle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <!-- Page Heading -->
+        <!-- Page Heading -->
     <h1 class="h3 mb-2 text-gray-800">Hasta</h1>
 
     <!-- DataTales Example -->
@@ -10,7 +9,7 @@
             <h6 class="m-0 font-weight-bold text-primary">Hasta Güncelleme</h6>
         </div>
         <div class="card-body">
-                        <form id="form1" runat="server" class="row">
+            <form id="form1" runat="server" class="row">
                 <div class="col-6">
                     <div class="form-group">
                         <label for="name">Adı</label>
