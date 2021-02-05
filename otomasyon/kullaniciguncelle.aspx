@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="kullaniciguncelle.aspx.cs" Inherits="otomasyon.kullaniciguncelle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Hasta</h1>
+    <h1 class="h3 mb-2 text-gray-800">Kullanıcı</h1>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Hasta Güncelleme</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Kullanıcı Güncelleme</h6>
         </div>
         <div class="card-body">
             <form id="form1" runat="server" class="row">
