@@ -44,7 +44,7 @@
                     <form id="form1" runat="server">
                         <div class="form-group">
                             <label for="name">Adı</label>
-                            <asp:TextBox ID="nameText" runat="server" placeholder="Mahmut" class="form-control"></asp:TextBox>
+                            <asp:TextBox ID="nameText" runat="server" placeholder="Alan" class="form-control" MaxLength="10"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass="alert-danger"
                                 ErrorMessage="Boş Geçilemez" ControlToValidate="nameText"></asp:RequiredFieldValidator>
                         </div>

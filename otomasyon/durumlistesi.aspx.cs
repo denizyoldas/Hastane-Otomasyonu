@@ -11,14 +11,14 @@ namespace otomasyon
     public partial class durumlistesi : System.Web.UI.Page
     {
         DataContext db = new DataContext();
-        int id = 0;
+        static int id = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["userRole"].ToString() != "admin")
                 Response.Redirect("Default.aspx");
-            FieldList();
+            SatuesList();
 
-            if (Request.QueryString["id"] != null)
+            if (Request.QueryString["id"] != null && id != Convert.ToInt32(Request.QueryString["id"]))
             {
                 id = Convert.ToInt32(Request.QueryString["id"]);
                 var status = db.Statuses.Find(id);
@@ -43,11 +43,11 @@ namespace otomasyon
                     db.SaveChanges();
                 }
 
-                FieldList();
+                SatuesList();
             }
         }
 
-        public void FieldList()
+        public void SatuesList()
         {
             var status = db.Statuses.ToList();
             Repeater1.DataSource = status;

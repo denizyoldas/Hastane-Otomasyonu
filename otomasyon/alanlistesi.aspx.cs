@@ -11,7 +11,7 @@ namespace otomasyon
     public partial class alanlistesi : System.Web.UI.Page
     {
         DataContext db = new DataContext();
-        int id = 0;
+        static int id = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["userRole"].ToString() != "admin")
@@ -19,7 +19,7 @@ namespace otomasyon
 
             FieldList();
 
-            if (Request.QueryString["id"] != null)
+            if (Request.QueryString["id"] != null && id != Convert.ToInt32(Request.QueryString["id"]))
             {
                 id = Convert.ToInt32(Request.QueryString["id"]);
                 var field = db.Fields.Find(id);
@@ -33,8 +33,8 @@ namespace otomasyon
             {
                 if (id != 0)
                 {
-                    var field = db.Statuses.Where(s => s.id == id).FirstOrDefault();
-                    field.name = nameText.Text;
+                    var field = db.Fields.Where(s => s.id == id).FirstOrDefault();
+                    field.name = nameText.Text.ToString();
                     db.SaveChanges();
                 }
                 else
